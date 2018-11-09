@@ -1,0 +1,381 @@
+*{
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size:16px;
+}
+.section-title{
+    color:#ec7532;
+    font-size:18px;
+    letter-spacing: 2px;
+    margin-bottom: 40px;
+    padding-bottom:15px;
+    border-bottom:1px solid rgba(0,0,0,0.1);
+    position: relative;
+}
+.section-title:before{
+    content:'';
+    width:160px;
+    height: 3px;
+    background-image:linear-gradient(to right,#fbbd61,#ec7532);
+    position: absolute;
+    bottom:-1px;
+    left:0;
+}
+.video-play{
+    width:80px;
+    height: 80px;
+    font-size:20px;
+    border-radius: 50%;
+    border:2px solid white;
+    line-height: 80px;
+    cursor: pointer;
+}
+
+/* HEADER CSS */
+.header{
+    position: absolute;
+    top:40px;
+    left:0;
+    z-index:10;
+    width:100%;
+}
+
+.header__detail i,.header__detail span{
+    font-size:14px;
+}
+.header__detail span{
+    border-color:rgba(255,255,255,0.2) !important;
+}
+.header__navbar .nav-item .nav-link{
+    color:white;
+    font-size:16px;
+}
+.header__navbar .navbar-nav{
+    border-color:rgba(255,255,255,0.2) !important;
+}
+.header__navbar .nav-item{
+    position: relative;
+}
+.header__navbar .nav-item:before{
+    content:'';
+    width:0;
+    height: 3px;
+    background-image:linear-gradient(to right,#fbbd61,#ec7532);
+    position: absolute;
+    bottom:-1px;
+    left:0;
+    transition:all 0.5s;
+}
+.header__navbar .nav-item.active:before,.header__navbar .nav-item:hover:before{
+    width:100%;
+}
+/* END HEADER CSS */
+
+/* CAROUSEL CSS */
+.carouse-item__overlay{
+    position: absolute;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    background:linear-gradient(to top,black,transparent)
+}
+.carousel-item__caption{
+    position: absolute;
+    top:55%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    padding-right: 25%;
+}
+.carousel-item__caption  span{
+    color:#fbbd61;
+    font-size:14px;
+    letter-spacing: 2px;
+}
+.carousel-item__caption p{
+    font-size:18px;
+}
+.carousel-item__trailer span{
+    width:40px;
+    height: 40px;
+    border:2px solid white;
+   line-height: 40px;
+}
+
+.btn-orange{
+    background:linear-gradient(to right,#fbbd61,#ec7532);
+    border-radius: 40px;
+    font-size:14px;
+    letter-spacing: 2px;
+    padding:11px 30px;
+    cursor: pointer;
+}
+.my-carousel .carousel-indicators{
+    bottom:50px;
+}
+.my-carousel .carousel-indicators li{
+    width:11px;
+    height: 11px;
+    background:transparent;
+    border:2px solid white;
+    border-radius: 50%;
+}
+.my-carousel .carousel-indicators li.active{
+    background-color:white;
+}
+/* END CAROUSEL CSS */
+
+/* MOVIE CSS */
+.movie{
+    padding-top:80px;
+}
+
+
+.movie__item{
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+}
+.movie__overlay{
+    position: absolute;
+    top:0;
+    left:-400%;
+    transform: skewX(45deg);
+    width:800px;
+    height:100%;
+    background:linear-gradient(to bottom,#fbbd61,#ec7532);
+    transition: all 0.5s;
+}
+
+
+.movie__item:hover .movie__overlay{
+    left: -100%;
+}
+.movie__detail{
+    position: absolute;
+    top:50%;
+    transform:translateY(-50%) scale(0.8);
+    left:0;
+    opacity: 0;
+    transition: all 0.3s;
+}
+.movie__item:hover .movie__detail{
+    opacity: 1;
+    transform:translateY(-50%) scale(1);
+}
+
+.movie__detail a{
+    font-size:14px;
+    letter-spacing: 2px;
+}
+.movie__detail span{
+    font-size:16px;
+}
+.movie__name{
+    font-size:18px;
+}
+.movie__star{
+    color:#fbbd61;
+}
+/* END MOVIE CSS */
+
+/* SHOWTIMES */
+.showtime{
+    padding:80px 0;
+}
+.showtime .nav-tabs .nav-link{
+    position: relative;
+    color:#4a4a4a;
+    padding:10px 30px;
+}
+.showtime .nav-tabs .nav-link:before{
+    content:'';
+    width:0;
+    height: 3px;
+    background-image:linear-gradient(to right,#fbbd61,#ec7532);
+    position: absolute;
+    bottom:-1px;
+    left:0;
+    transition:all 0.5s;
+}
+.showtime .nav-tabs .nav-link.active,.showtime .nav-tabs .nav-link:hover{
+    border-color: white white #dee2e6 ;
+}
+.showtime .nav-tabs .nav-link.active:before,.showtime .nav-tabs .nav-link:hover:before{
+    width:100%;
+}
+.showtime__movie img{
+    border-radius: 10px;
+}
+.showtime__list{
+    color: #717171;
+}
+
+
+
+.showtime__detail > span{
+    font-size:14px;
+    color:#ec7532;
+    letter-spacing: 2px;
+}
+.showtime__detail > h1{
+    font-weight: 300;
+    font-size:24px;
+    letter-spacing: 1px;
+}
+.showtime__detail > p{
+    font-size:16px;
+}
+.showtime__detail > a{
+    font-size:12px;
+    color:#ec7532;
+    letter-spacing: 3px;  
+}
+.showtime__list i,.showtime__list span {
+    font-size:14px;
+}
+.showtime__length span{
+    width:35px;
+    height: 35px;
+    border-radius: 50%;
+    line-height: 35px;
+}
+/* END SHOWTIMES */
+/* COMMING CSS */
+.coming{
+    background-color:#000;
+}
+.coming__bg{
+    padding:80px 0;
+    background:url('../img/slide-3.png') no-repeat center center;
+    background-size: cover;
+}
+.coming__bg .section-title{
+    color:white;
+}
+.coming__detail > span{
+    font-size:14px;
+    color: #ec7532;
+}
+.coming__detail h1{
+    font-weight: 300;
+    font-size:34px;
+}
+.coming__detail .fa-star{
+    font-size:14px;
+    color:#fbbd61
+}
+.coming__date{
+  opacity: .75;
+  font-size:14px;
+}
+
+.coming__detail a{
+    color:#ec7532;
+    letter-spacing: 3px;
+}
+.coming__trailer{
+    position: relative;
+}
+.coming__trailer .video-play{
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    border-color:#ec7532;
+    transition:all 0.2s;
+    font-size:20px;
+}
+.coming__trailer .video-play:hover{
+    transform:translate(-50%,-50%) scale(0.9);
+}
+.coming__item{
+    opacity: 0.4;
+    transition: all 0.4s;
+}
+.coming__item:hover,.coming__item.active{
+    opacity: 1;
+}
+.coming__item img{
+    border-radius: 10px;
+}
+.coming__item span{
+    font-size:14px;
+    opacity: .75;
+}
+.coming__list{
+    padding:40px 0;
+}
+/* END COMMING CSS */
+
+/* CONTACT CSS */
+.contact__content{
+    padding:50px 0;
+}
+.contact__content p {
+    font-size:23px;
+  
+}
+.contact__content h1 {
+    font-size:40px;
+    font-weight: 400;
+    color:#ec7532;
+}
+/* END CONTACT CSS */
+
+/* FOOTER CSS */
+.footer{
+    background-color:#101010;
+    padding:50px 0;
+}
+.footer h3{
+    color: #ec7532;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+.footer ul li{
+    margin-bottom:10px;
+}
+.footer ul li a{
+    color:white;
+    text-decoration: none;
+    transition: all 0.3s;
+ 
+}
+.footer ul li a:hover{
+    color:#ec7532;
+}
+.copy-right{
+    border-color: rgba(255,255,255,0.2) !important;
+}
+/* END FOOTER CSS */
+@media screen and (max-width:1200px){
+    /* viết css ở đây */
+
+}
+@media screen and (max-width:996px){
+    /* viết css ở đây */
+
+}
+@media screen and (max-width:768px){
+    /* viết css ở đây */
+
+}
+@media screen and (max-width:576px){
+    /* viết css ở đây */
+
+}
+.movie_icon{
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    border: 1px solid white;
+    color: white;
+    text-align: center;
+    line-height: center;
+    font-size: 25px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}

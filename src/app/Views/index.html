@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+        crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400,700" rel="stylesheet">
+    <link rel="stylesheet" href="../../assets/css/venobox.css">
+    <link rel="stylesheet" href="../../assets/css/index.css">
+</head>
+
+<body>
+
+    <!--HEADER-->
+    <header class="header ">
+        <div class="container header__detail">
+            <p class="text-right text-white m-0">
+                <span id="userInfo" style="display:none">
+                    Xin chào
+                    <span id="userName"></span>
+                </span>
+                
+                <i class="fa fa-phone"></i>
+                <span class="mx-2 pr-2 border-right font-weight-bold">0163 4643 124</span>
+                <i class="fa fa-search"></i>
+            </p>
+        </div>
+        <nav class="container header__navbar navbar navbar-expand-lg py-0">
+            <a class="navbar-brand py-0" href="#">
+                <img src="../../assets/img/logo.svg" alt="">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <ul class="navbar-nav ml-auto border-bottom">
+                    <li class="nav-item active">
+                        <a class="nav-link px-4" href="#">HOME</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link px-4" href="#">WHAT'S ON</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link px-4" href="#">SHORTCODES</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link px-4" href="#">CONTACT</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link px-4 text-uppercase" href="#" data-toggle="modal" data-target="#modalDangKy">Sign
+                            Up</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link px-4 text-uppercase" href="#" data-toggle="modal" data-target="#modalDangNhap">Sign
+                            in</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link px-4 text-uppercase" href="cart.html">
+                            <i class="fa fa-shopping-cart"></i>
+                            <span class="badge badge-light" id="totalAmount">0</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <!--END HEADER-->
+
+    <!--CAROUSEL-->
+    <section class="my-carousel">
+        <div id="myCarousel" class="carousel carousel-fade slide" data-ride="carousel">
+            <ol class="carousel-indicators justify-content-start">
+                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                <li data-target="#myCarousel" data-slide-to="1"></li>
+                <li data-target="#myCarousel" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img class="d-block w-100" src="../../assets/img/hero-1.jpg" alt="First slide">
+                    <div class="carouse-item__overlay"></div>
+                    <div class="container carousel-item__caption text-white">
+                        <span class="title">ACTION, ADVENTURE, FANTASY</span>
+                        <h1 class="display-4">End of the World: Part I</h1>
+                        <p>Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium lectorum. Mirum
+                            est notare quam littera gothica, quam nunc putamu.</p>
+                        <div class="carousel-item__trailer mt-4">
+                            <span class="d-inline-block text-white rounded-circle text-center mr-2">PG</span>
+                            <button class="btn-orange border-0 text-white venobox  vbox-item" href="https://youtu.be/aOXvyd9v1cg" data-vbtype="video">
+                                <i class="fa fa-play mr-1"></i>
+                                PLAY TRAILER
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="../../assets/img/hero-2.jpg" alt="Second slide">
+                    <div class="container carousel-item__caption text-white">
+                        <span>ACTION, ADVENTURE, FANTASY</span>
+                        <h1 class="display-4">End of the World: Part II</h1>
+                        <p>Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium lectorum. Mirum
+                            est notare quam littera gothica, quam nunc putamu.</p>
+                        <div class="carousel-item__trailer mt-4">
+                            <span class="d-inline-block text-white rounded-circle text-center mr-2">PG</span>
+                            <button class="btn-orange border-0 text-white venobox  vbox-item" href="https://youtu.be/aOXvyd9v1cg" data-vbtype="video">
+                                <i class="fa fa-play mr-1"></i>
+                                PLAY TRAILER
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="../../assets/img/hero-3.jpg" alt="Third slide">
+                    <div class="container carousel-item__caption text-white">
+                        <span>ACTION, ADVENTURE, FANTASY</span>
+                        <h1 class="display-4">End of the World: Part III</h1>
+                        <p>Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium lectorum. Mirum
+                            est notare quam littera gothica, quam nunc putamu.</p>
+                        <div class="carousel-item__trailer mt-4">
+                            <span class="d-inline-block text-white rounded-circle text-center mr-2">PG</span>
+                            <button class="btn-orange border-0 text-white venobox  vbox-item" href="https://youtu.be/aOXvyd9v1cg" data-vbtype="video">
+                                <i class="fa fa-play mr-1"></i>
+                                PLAY TRAILER
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- END CAROUSEL -->
+
+    <!--MOVIE-->
+    <section class="movie">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h1 class="section-title">SHOWING MOVIES</h1>
+                </div>
+
+            </div>
+            <div class="row" id="movieList">
+                
+              
+            </div>
+        </div>
+    </section>
+    <!-- END MOVIE -->
+
+    <!--SHOWTIMES-->
+    <section class="showtime">
+        <div class="container">
+
+            <nav>
+                <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                    <a class="nav-item nav-link active" data-toggle="tab" href="#monday">MON</a>
+                    <a class="nav-item nav-link " data-toggle="tab" href="#tuesday">TUE</a>
+                    <a class="nav-item nav-link " data-toggle="tab" href="#wednesday">WED</a>
+                    <a class="nav-item nav-link " data-toggle="tab" href="#thursday">THU</a>
+                    <a class="nav-item nav-link " data-toggle="tab" href="#friday">FRI</a>
+                    <a class="nav-item nav-link " data-toggle="tab" href="#saturday">SAT</a>
+                    <a class="nav-item nav-link " data-toggle="tab" href="#sunday">SUN</a>
+                </div>
+            </nav>
+
+            <div class="tab-content">
+                <div class="tab-pane fade show active" id="monday">
+                    <div class="row  py-5 showtime__movie">
+                        <div class="col-2">
+                            <img src="../../assets/img/movie-6.jpg" class="img-fluid">
+                        </div>
+                        <div class="col-10">
+                            <div class="showtime__detail">
+                                <span>ACTION, ADVENTURE, FANTASY</span>
+                                <h1>It's over</h1>
+                                <p>European mercenaries searching for black powder become embroiled in the defense of
+                                    It's over of China against a horde of monstrous creatures.</p>
+                                <a href="#" class="d-block mb-4">
+                                    FULL SYNOPSIS
+                                    <i class="fa fa-angle-right"></i>
+                                </a>
+                                <div class="showtime__list d-flex align-items-center">
+                                    <i class="fa fa-clock-o  mr-2"></i>
+                                    <span class=" mr-2"> VIEWING TIMES</span>
+                                    <button class="btn mr-2" disabled>14:45</button>
+                                    <button class="btn mr-2">15:45</button>
+                                    <button class="btn mr-2">16:45</button>
+                                    <button class="btn mr-2">17:45</button>
+                                    <p class="showtime__length ml-auto d-flex align-items-center">
+                                        105 MINS
+                                        <span class="bg-dark d-inline-block text-center text-white font-weight-bold ml-2">15</span>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="tab-pane fade" id="tuesday">
+                    <div class="row  py-5 showtime__movie">
+                        <div class="col-2">
+                            <img src="../../assets/img/movie-7.jpg" class="img-fluid">
+                        </div>
+                        <div class="col-10">
+                            <div class="showtime__detail">
+                                <span>ACTION, ADVENTURE, FANTASY</span>
+                                <h1>It's over</h1>
+                                <p>European mercenaries searching for black powder become embroiled in the defense of
+                                    It's over of China against a horde of monstrous creatures.</p>
+                                <a href="#" class="d-block mb-4">
+                                    FULL SYNOPSIS
+                                    <i class="fa fa-angle-right"></i>
+                                </a>
+                                <div class="showtime__list d-flex align-items-center">
+                                    <i class="fa fa-clock-o  mr-2"></i>
+                                    <span class=" mr-2"> VIEWING TIMES</span>
+                                    <button class="btn mr-2" disabled>14:45</button>
+                                    <button class="btn mr-2">15:45</button>
+                                    <button class="btn mr-2">16:45</button>
+                                    <button class="btn mr-2">17:45</button>
+                                    <p class="showtime__length ml-auto d-flex align-items-center">
+                                        105 MINS
+                                        <span class="bg-dark d-inline-block text-center text-white font-weight-bold ml-2">15</span>
+                                    </p>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </section>
+
+    <!-- END SHOWTIMES -->
+
+    <!-- coming MOVIES -->
+    <section class="coming">
+
+        <div class="coming__bg">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <h1 class="section-title">coming SOON</h1>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-6 d-flex align-items-center">
+                        <div class="coming__detail text-white">
+                            <span>COMEDY, CRIME</span>
+                            <h1>The Hangover Part III</h1>
+                            <p>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <span class="coming__date ">
+                                    <i class="fa fa-calendar-o mx-2"></i> 30 September, 2017
+                                </span>
+                            </p>
+                            <p>
+                                When one of their own is kidnapped by an angry gangster, the Wolf Pack must track down
+                                Mr. Chow, who has escaped from prison and is on the run.
+                            </p>
+                            <a href="">MORE INFO <i class="fa fa-angle-right"></i></a>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="coming__trailer">
+                            <img src="../../assets/img/slide-3-video.png" alt="">
+                            <i class="fa fa-play video-play text-center text-white venobox  vbox-item" href="https://youtu.be/aOXvyd9v1cg" data-vbtype="video"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="coming__list">
+            <div class="container">
+                <div class="row">
+                    <div class="col-2">
+                        <div class="coming__item text-center text-white">
+                            <img src="../../assets/img/movie-9.jpg" class="img-fluid">
+                            <p class="mt-2 mb-0">Too fast</p>
+                            <span>15 April,2017</span>
+                        </div>
+                    </div>
+                    <div class="col-2">
+                        <div class="coming__item text-center text-white">
+                            <img src="../../assets/img/movie-12.jpg" class="img-fluid">
+                            <p class="mt-2 mb-0">Too fast</p>
+                            <span>15 April,2017</span>
+                        </div>
+                    </div>
+                    <div class="col-2">
+                        <div class="coming__item text-center text-white active">
+                            <img src="../../assets/img/movie-11.jpg" class="img-fluid">
+                            <p class="mt-2 mb-0">Too fast</p>
+                            <span>15 April,2017</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <!-- END coming MOVIES -->
+
+    <!-- CONTACT -->
+    <section class="contact">
+        <div class="contact__content text-center">
+            <p class="lead">Need help? Contact our support team on</p>
+            <h1 class="mb-0">0330 123 4567</h1>
+        </div>
+    </section>
+    <!-- END CONTACT -->
+    <!--FOOTER-->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6 col-md-3">
+                    <h3>GET IN TOUCH</h3>
+                    <ul class="list-unstyled">
+                        <li><a href="#">FAQs</a></li>
+                        <li><a href="#">Give us feedback</a></li>
+                        <li><a href="#">Contact us</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-6 col-md-3">
+                    <h3>ABOUT MOVIE STAR</h3>
+                    <ul class="list-unstyled">
+                        <li><a href="#">About us</a></li>
+                        <li><a href="#">Find us</a></li>
+                        <li><a href="#">Schedule</a></li>
+                        <li><a href="#">News</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-6 col-md-3">
+                    <h3>LEGAL STUFF</h3>
+                    <ul class="list-unstyled">
+                        <li><a href="#">Terms & Conditions</a></li>
+                        <li><a href="#">Give us feedback</a></li>
+                        <li><a href="#">Cookie policy</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-6 col-md-3">
+                    <h3>CONNECT WITH US</h3>
+                    <ul class="list-unstyled">
+                        <li><a href="#"> <i class="fa fa-facebook mr-2"></i> Facebook</a></li>
+                        <li><a href="#"><i class="fa fa-twitter mr-2"></i> Twitter</a></li>
+                        <li><a href="#"><i class="fa fa-google-plus"></i> Google</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 ">
+                    <p class="border-top copy-right text-white pt-3 mt-5">2017 © Movie Star / Web design by Klever
+                        media</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- END FOOTER -->
+    <!-- Modal -->
+
+    <div class="modal fade" id="modalDangKy" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Register</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="form-group">
+                        <label>Tài Khoản: </label>
+                        <input type="text" id="TaiKhoan" class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <label>Mật Khẩu: </label>
+                        <input type="text" id="MatKhau" class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <label>Họ Tên: </label>
+                        <input type="text" id="HoTen" class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <label>Email: </label>
+                        <input type="email" id="Email" class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <label>Số ĐT: </label>
+                        <input type="number" id="SoDT" class="form-control">
+                    </div>
+                </div>
+                <div class="modal-footer justify-content-center">
+                    <button type="button" id="btnDangKy" class="btn btn-orange text-white rounded">Save changes</button>
+                </div>
+            </div>
+        </div>
+    </div>
+   
+    <div class="modal fade" id="modalDangNhap" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Đăng Nhập</h5>
+                    <button type="button" class="close" id="btnClose" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="form-group">
+                        <label>Tài Khoản: </label>
+                        <input type="text" id="txtTaiKhoan" class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <label>Mật Khẩu: </label>
+                        <input type="text" id="txtMatKhau" class="form-control">
+                    </div>
+                </div>
+                <div class="modal-footer justify-content-center">
+                    <button type="button" id="btnDangNhap" class="btn btn-orange text-white rounded">Đăng Nhập</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+   
+  
+</body>
+
+</html>
+
+<!-- Để chạy typescript thì cài thêm bằng cách chạy lệnh npm install typescript -g -->
+<!-- sau đó npm install typescript --save để lưu vào package.json, qua dự án khác thì chạy lệnh này, còn -g thì ko cần-->
+<!-- tiếp tục chạy tsc --init để tạo file tsconfig.json để compile es6 về es5 cho trình duyệt hiểu -->
+<!-- tiếp tục npm install ts-loader --save-dev -->
